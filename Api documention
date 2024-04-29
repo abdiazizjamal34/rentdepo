@@ -1,0 +1,32 @@
+from renting api 
+Post  http://localhost:3000/api/rooms/rent
+jeson 
+{
+  "floor": 4,
+  "room": 2,
+  "tenantName": "John Doe",
+  "startDate": "2024-02-24",
+  "endDate": "2024-05-24",
+  "price": 5500
+}
+
+for releasing 
+get http://localhost:3000/api/rooms/release
+ jeson
+ {
+ "floor": 4 ,
+ "room": 2
+ }
+
+for monthy Report generater is 
+Post http://localhost:3002/api/reports/monthly 
+
+jeson 
+
+{
+"month":2;
+}
+ 
+ fro retriving the room 
+get http://localhost:3000/api/rooms
+
